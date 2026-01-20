@@ -1,15 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acxite website</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <link rel="stylesheet" href="/src/scss/styles.scss">
+</head>
+
+
+
+<body>``
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Acxite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light text-center py-5">
+        <div class="container">
+            <div class="py-5">
+                <h1 class="display-4 fw-bold text-dark">Welcome to Acxite</h1>
+                <p class="lead text-muted mb-4">We provide innovative solutions for your business growth.</p>
+                <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="#" class="btn btn-outline-secondary btn-lg ms-2">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-laptop fs-1"></i>
+                                <!-- Bootstrap Icons would need to be installed, using text for now -->
+                                <h3>Web Design</h3>
+                            </div>
+                            <p class="card-text text-muted">Beautiful and responsive designs tailored to your brand
+                                identity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary">
+                                <h3>Development</h3>
+                            </div>
+                            <p class="card-text text-muted">Robust and scalable web development solutions for complex
+                                needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary">
+                                <h3>Marketing</h3>
+                            </div>
+                            <p class="card-text text-muted">Strategic digital marketing to boost your online presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Acxite. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
+
 </html>
